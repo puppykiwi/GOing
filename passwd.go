@@ -31,3 +31,10 @@ func genRand(length int) string{
 	return (passwd)
 
 }
+
+func main(){
+	var maxLength = getParams()
+	// fmt.Print(e) //debug
+	passwd := genRand(maxLength)
+	fmt.Println("Your password is:", passwd,"\n")
+}
