@@ -15,3 +15,19 @@ func getParams() int {
 	return (length)
 }
 
+func genRand(length int) string{
+	var passwd string = ""
+	var maxVar = 126
+	var minVar = 48
+
+	
+	for i := 0; i < length; i++ {
+		var randchar = rand.Intn(maxVar - minVar) + minVar
+		//fmt.Println(randchar)
+		passwd = passwd + string(rune(randchar))
+		//fmt.Println(passwd)
+	}
+	//fmt.Println("Final : ", passwd)
+	return (passwd)
+
+}
