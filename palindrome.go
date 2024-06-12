@@ -17,5 +17,4 @@ func main(){
 
 	fmt.Scan(&word)
 
-	mt.Println(word, )
 }
